@@ -1,18 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  /* This maps the fonts to Tailwind classes like font-anton and font-space */
-  --font-anton: var(--font-anton);
-  --font-space: var(--font-space-grotesk);
-  --font-mono: var(--font-mono);
-
-  /* Optional: Custom blue to match your branding */
-  --color-brand-blue: #3b82f6;
+  --color-terminal-bg: #0a1128; /* Deep Navy Blue */
+  --color-card-bg: #111d3a;     /* Lighter Navy for Cards */
+  --color-border: #1e2d4d;      /* Subtle border color */
 }
 
-/* Custom background texture for the "Paper" feel */
 body {
-  background-color: #f4f4f2;
-  background-image: url("https://www.transparenttextures.com/patterns/felt.png");
-  background-attachment: fixed;
+  background-color: var(--color-terminal-bg);
+  color: #e2e8f0;
 }
